@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indicação Literária</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Indicação Literária</h1>
+
+        <p class="subtitulo">
+            Escolha um gênero e depois clique em receber recomendação.
+        </p>
+
+        <div class="botoes">
+
+            <button onclick="selecionarGenero('fantasia', this)">
+                Fantasia
+            </button>
+
+            <button onclick="selecionarGenero('romance', this)">
+                Romance
+            </button>
+
+            <button onclick="selecionarGenero('suspense', this)">
+                Suspense
+            </button>
+
+        </div>
+
+        <button id="btnIndicacao" onclick="mostrarLivro()">
+            Receber Recomendação
+        </button>
+
+        <div id="resultado">
+
+            <img id="imagemLivro" src="" alt="">
+
+            <h2 id="nomeLivro"></h2>
+
+            <p id="descricaoLivro"></p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
